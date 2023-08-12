@@ -260,12 +260,12 @@ function M.Ranger(dir)
     end
 end
 function M.Joshuto(dir)
-    dir = dir or "."
-    if config.ui.default == "float" then
-        createWin(config.cmds.joshuto_cmd .. " --choosefiles /tmp/fm-nvim --path " .. dir, "l")
-    elseif config.ui.default == "split" then
-        createSplit(config.cmds.joshuto_cmd .. " --choosefiles /tmp/fm-nvim --path " .. dir, "l")
-    end
+	dir = dir or "."
+	if config.ui.default == "float" then
+		createWin(config.cmds.joshuto_cmd .. " --file-chooser --output-file /tmp/fm-nvim " .. dir, "l")
+	elseif config.ui.default == "split" then
+		createSplit(config.cmds.joshuto_cmd .. " --file-chooser --output-file /tmp/fm-nvim " .. dir, "l")
+	end
 end
 function M.Lazygit(dir)
     dir = dir or "."
