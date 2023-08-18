@@ -271,9 +271,9 @@ end
 function M.Yazi(dir)
 	dir = dir or "."
 	if config.ui.default == "float" then
-		createWin(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd" .. dir, "l")
+		createWin(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd " .. dir, "l")
 	elseif config.ui.default == "split" then
-		createSplit(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd" .. dir, "l")
+		createSplit(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim --cwd " .. dir, "l")
 	end
 end
 function M.Lazygit(dir)
