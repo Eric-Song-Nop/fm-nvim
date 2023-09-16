@@ -269,7 +269,7 @@ function M.Joshuto(dir)
 	end
 end
 function M.Yazi(dir)
-	dir = dir or ""
+	dir = dir or "."
 	if config.ui.default == "float" then
 		createWin(config.cmds.yazi_cmd .. " --chooser-file /tmp/fm-nvim " .. dir, "l")
 	elseif config.ui.default == "split" then
